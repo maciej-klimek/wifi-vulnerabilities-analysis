@@ -1,0 +1,2 @@
+- [ ] dodac moduly i pliki ktorych uzywamy przy testach (ssid repo, wifi framework/framing)
+- [ ] opisac i zrobic wlasne instrukcje do funkcjonalnosci ktore uzywamy
