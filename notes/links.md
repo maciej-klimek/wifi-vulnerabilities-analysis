@@ -21,3 +21,6 @@ Notatki na pracach - Lumin:
 
 Overleaf:
 [https://www.overleaf.com/8773217185vjrhwkygkthg#c0947e](https://www.overleaf.com/8773217185vjrhwkygkthg#c0947e)
+
+Hostapd WPA3 setup:
+[https://incolumitas.com/2019/02/22/running-a-WPA3-access-point-with-hostapd-SAE-Dragonfly](https://incolumitas.com/2019/02/22/running-a-WPA3-access-point-with-hostapd-SAE-Dragonfly/)
