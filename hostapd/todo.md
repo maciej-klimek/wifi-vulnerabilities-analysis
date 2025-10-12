@@ -1,0 +1,5 @@
+- poprawic komentarze
+- test internet sharingu
+- walidacji czy ma prawo dzialac na lab kompie
+- test end-end dostepu
+- ssid test 
