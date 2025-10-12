@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # hostapd_prereq.py
+from logger_config import logger  # if not already imported
+import shlex
 import subprocess
 import sys
 import os
@@ -16,6 +18,41 @@ def run_cmd(cmd, sudo=True, capture=False):
     if capture:
         return subprocess.run(full_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     return subprocess.run(full_cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+# NAT / iptables internet sharing helpers (optional)
+
+def enable_internet_sharing(inet_iface=None, ap_iface=None):
+    inet = inet_iface or config.INET_IFACE
+    ap = ap_iface or config.IFACE
+    logger.info(f"Enabling internet sharing: {inet} -> {ap}")
+
+    # Turn on IP forwarding
+    run_cmd(["sysctl", "-w", "net.ipv4.ip_forward=1"])
+
+    # Add NAT and forward rules (best-effort)
+    run_cmd(["iptables", "-t", "nat", "-A", "POSTROUTING",
+            "-o", inet, "-j", "MASQUERADE"])
+    run_cmd(["iptables", "-A", "FORWARD", "-i", inet, "-o", ap, "-m",
+            "state", "--state", "RELATED,ESTABLISHED", "-j", "ACCEPT"])
+    run_cmd(["iptables", "-A", "FORWARD", "-i", ap, "-o", inet, "-j", "ACCEPT"])
+
+    logger.success("Internet sharing enabled (iptables rules added).")
+
+
+def disable_internet_sharing():
+    logger.info(
+        "Disabling internet sharing and cleaning iptables rules (best-effort)")
+
+    # Turn off forwarding (best-effort)
+    run_cmd(["sysctl", "-w", "net.ipv4.ip_forward=0"])
+
+    # Flush NAT + filter rules (best-effort; conservative flush for our use-case)
+    run_cmd(["iptables", "-t", "nat", "-F"])
+    run_cmd(["iptables", "-F"])
+    run_cmd(["iptables", "-X"])
+
+    logger.success("Internet sharing disabled (iptables rules flushed).")
 
 
 def prepare():
@@ -69,6 +106,12 @@ def restore():
             logger.debug(f"Removed temp file: {f}")
         except FileNotFoundError:
             logger.debug(f"Temp file not found (ok): {f}")
+    # disable sharing if present
+    try:
+        disable_internet_sharing()
+    except Exception:
+        logger.debug(
+            "disable_internet_sharing() raised an exception; continuing cleanup")
 
     logger.success(
         f"Interface {config.IFACE} restored. Wi-Fi should work normally.")
@@ -81,16 +124,23 @@ def usage_and_exit():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2 or sys.argv[1] not in ["prepare", "restore"]:
+    if len(sys.argv) != 2 or sys.argv[1] not in ["prepare", "restore", "enable-share", "disable-share"]:
         usage_and_exit()
+
     try:
-        if sys.argv[1] == "prepare":
+        cmd = sys.argv[1]
+        if cmd == "prepare":
             prepare()
-        else:
+        elif cmd == "restore":
             restore()
+        elif cmd == "enable-share":
+            enable_internet_sharing()
+        elif cmd == "disable-share":
+            disable_internet_sharing()
     except KeyboardInterrupt:
         logger.warning(
             "Interrupted by user — attempting to restore interface.")
+        # on interrupt, attempt restore
         restore()
     finally:
         # make sure terminal state sane

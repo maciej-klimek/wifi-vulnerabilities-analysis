@@ -8,6 +8,11 @@ DHCP_RANGE_START = "192.168.12.2"
 DHCP_RANGE_END = "192.168.12.50"
 DHCP_LEASE = "12h"
 
+# Internet sharing (optional)
+INET_IFACE = "enp3s0"       # interface that has internet access (Ethernet)
+ENABLE_INTERNET_BY_DEFAULT = False  # keep sharing off by default
+
+
 # Hostapd sources / build
 HOSTAPD_VERSION = "2.11"
 HOSTAPD_TAR = f"hostapd-{HOSTAPD_VERSION}.tar.gz"
