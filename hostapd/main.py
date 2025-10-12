@@ -95,16 +95,27 @@ def main():
     run_script("hostapd_prereq.py", ["prepare"])
     pause_prompt(
         "Interface prepared. Press ENTER to launch hostapd in new terminal...")
+    
+    # 4) ask if user wants internet sharing
+    share_resp = input(
+        "Enable Internet sharing (Ethernet -> AP)? [y/N]: ").strip().lower()
+    if share_resp in ("y", "yes"):
+        # call the new subcommand
+        run_script("hostapd_prereq.py", ["enable-share"])
+    else:
+        logger.info(
+            "Internet sharing not enabled (you can enable later with: python3 hostapd_prereq.py enable-share)")
 
-    # 4) ask debug option
+
+    # 5) ask debug option
     dd_resp = input("Run hostapd with debug (-dd)? [y/N]: ").strip().lower()
     debug_flag = dd_resp in ("y", "yes")
 
-    # 5) open hostapd in new terminal
+    # 6) open hostapd in new terminal
     open_hostapd_in_terminal(debug=debug_flag)
     logger.info("Hostapd started in new terminal.")
 
-    # 6) interactive menu
+    # 7) interactive menu
     menu_loop()
 
     logger.info(
