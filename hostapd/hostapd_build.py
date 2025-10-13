@@ -9,6 +9,31 @@ from logger_config import logger
 import config
 
 
+def install_dependencies():
+    if not config.INSTALL_BUILD_DEPS:
+        logger.info("Skipping dependency installation (disabled in config).")
+        return
+
+    logger.info("Installing required build dependencies for hostapd...")
+    try:
+        subprocess.run(
+            ["sudo", "apt-get", "update"],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
+        subprocess.run(
+            ["sudo", "apt-get", "install", "-y"] + config.BUILD_DEPENDENCIES,
+            check=True
+        )
+        logger.success("All required build dependencies installed.")
+    except subprocess.CalledProcessError:
+        logger.error("Failed to install build dependencies.")
+        raise
+
+    time.sleep(config.SLEEP_BETWEEN_STEPS)
+
+
 def build_hostapd():
     hostapd_dir = os.path.join(
         config.HOSTAPD_SRC_DIR, config.HOSTAPD_BUILD_SUBDIR)
@@ -27,6 +52,8 @@ def build_hostapd():
     logger.info(f"Copying {config_src} to {config_dst} ...")
     shutil.copy(config_src, config_dst)
 
+    install_dependencies()
+
     logger.info("Starting build (make)...")
     make_cmd = ["make", "-C", hostapd_dir, f"-j{config.MAKE_JOBS}"]
     try:
@@ -35,7 +62,6 @@ def build_hostapd():
         logger.error(f"Build failed: {e}")
         raise
 
-    # ensure destination dir exists
     os.makedirs(config.HOSTAPD_DEST_DIR, exist_ok=True)
     src_bin = os.path.join(hostapd_dir, "hostapd")
     dst_bin = os.path.join(config.HOSTAPD_DEST_DIR, "hostapd")

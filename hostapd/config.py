@@ -1,6 +1,19 @@
 # config.py
 # Central configuration used by all hostapd helper scripts.
 
+# Packages required for building hostapd
+BUILD_DEPENDENCIES = [
+    "build-essential",
+    "libssl-dev",
+    "libnl-3-dev",
+    "libnl-genl-3-dev",
+    "pkg-config",
+    "libsqlite3-dev",
+    "libpcre3-dev",
+]
+INSTALL_BUILD_DEPS = True  # if False, skip auto-install
+
+
 # Network / interface
 IFACE = "wlo1"
 STATIC_IP = "192.168.12.1/24"
