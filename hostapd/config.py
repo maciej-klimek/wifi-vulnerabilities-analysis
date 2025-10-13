@@ -15,14 +15,14 @@ INSTALL_BUILD_DEPS = True  # if False, skip auto-install
 
 
 # Network / interface
-IFACE = "wlo1"
+IFACE = "wlan0"
 STATIC_IP = "192.168.12.1/24"
 DHCP_RANGE_START = "192.168.12.2"
 DHCP_RANGE_END = "192.168.12.50"
 DHCP_LEASE = "12h"
 
 # Internet sharing (optional)
-INET_IFACE = "enp3s0"       # interface that has internet access (Ethernet)
+INET_IFACE = "eth0"       # interface that has internet access (Ethernet)
 ENABLE_INTERNET_BY_DEFAULT = False  # keep sharing off by default
 
 

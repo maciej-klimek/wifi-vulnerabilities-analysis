@@ -16,12 +16,12 @@ def install_dependencies():
 
     logger.info("Installing required build dependencies for hostapd...")
     try:
-        subprocess.run(
-            ["sudo", "apt-get", "update"],
-            check=True,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
-        )
+        # subprocess.run(
+        #     ["sudo", "apt-get", "update"],
+        #     check=True,
+        #     stdout=subprocess.DEVNULL,
+        #     stderr=subprocess.DEVNULL
+        # )
         subprocess.run(
             ["sudo", "apt-get", "install", "-y"] + config.BUILD_DEPENDENCIES,
             check=True
