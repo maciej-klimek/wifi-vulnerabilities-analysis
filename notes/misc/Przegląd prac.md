@@ -1,4 +1,3 @@
-## **Temat:**
 
 1. Framing Frames: Bypassing {Wi-Fi} Encryption by Manipulating Transmit Queues   
    1. [Prace Matiego Framing Frames](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:j3f4tGmQtD8C)  (2.1.1 wyjaśnienie całego procesu ) (Przeczytałem do 3.3.2 i od 4 do 4.1.1 bo więcej to już dużo szczegółów)  
@@ -62,7 +61,7 @@
       2. Software:  
          1. Multi-channel MitM: [github](https://github.com/vanhoefm/mc-mitm)  
          2. Wifi 802.11x i nowsze
-         
+
 4. FragAttacks: Forging Frames in Protected Wi-Fi Networks  
    1. [Prace Matiego](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:4OULZ7Gr8RgC)  
    2. [Git](https://github.com/vanhoefm/fragattacks)  
