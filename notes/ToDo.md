@@ -8,9 +8,13 @@ HOSTAPD:
 - [X] walidacji czy ma prawo dzialac na lab kompie - MA PRAWO !! (inny conf i problem z apd-update)
   - (opcja na wylaczenie apt-update)
 - [X] test end-end dostepu
-- [ ] ssid test 
+- [ ] ssid test
+  - [ ] warto sprobowac zrobic modyfikacje do samego kodu ataku i pyknac jeszcze raz
 
 SSID:
-- [ ] zrobic python enva pod atak
+- [X] zrobic python enva pod atak
 - [ ] przegladnac helpery czy instaluja wszystko fakycznie (opcja na wylaczenie apt-update)
 
+
+
+# HDMI NA PIĄTEK DO LABA !!!!!!!!!!!!!!
