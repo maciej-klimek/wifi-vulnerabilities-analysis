@@ -49,17 +49,16 @@
    4. **Część praktyczna**  
       1. przebieg poszczególnych eksperymentów  
          1. Trzy stage ():
-            1. Zrytek
-            2. Nasz conf hostapd
-            3. Boss
+            1. Cheap COTS (TP-Link)
+            2. Hostapd WPA3 conf
+            3. High-end AP/Router
       2. opis zachodzących zjawisk i ich wyjaśnienie  
       3. pokazanie na przykładach, schematach
 
    5. **Zestawienie wyników,** wnioski i omówienie potencjalnego wpływu podatności - tabelka?
 
 5. **Transmit queue security context flaw**  
-
-   (Obie prace mają dotyczyć podatnosci na rozne rodzaje ramek (sposób w jaki software je interpertuje/na co im pozwala), nazwa pracy: Fragment and Forge)
+   (Podatnosci na rozne rodzaje ramek (sposób w jaki software je interpertuje/na co im pozwala))
    4. **Część teoretyczna** - wprowadzenie i dokładne omówienie podatności
       1. opis teoretyczny - wytłumaczenie struktry queues która w kontekście standardu 802.11 nosi nazwę security associa-tion
       2. threat model  
