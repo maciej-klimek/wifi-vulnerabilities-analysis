@@ -201,7 +201,7 @@ Druga strona weryfikuje, czy hash się zgadza:
 * jak tak → handshake OK, key κ staje się wspólnym sekretem.
 
 
-![dragonfly_scheme](WPA-handshake.png)
+![dragonfly_scheme](WPA3-handshake.png)
 ---
 
 ### Dragonfly w WPA3 i EAP-pwd
