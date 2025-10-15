@@ -25,8 +25,10 @@
     - [../../ssid-integrity-vulnerability/Wstępne Przygotowania.md](<../../ssid-integrity-vulnerability/Wstępne Przygotowania.md>)
 
 - **Notatki nowsze:**
-    - [Let the numbers talk](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:IWHjjKOFINEC)
-    - [Fragment and Forge](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:dhFuZR0502QC)
+    - [Let the numbers talk](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:IWHjjKOFINEC) - [notatka](https://docs.google.com/document/d/1VDVzoKpSgDJKLGcJjrB-dIcpqv0HnVsn5RXsTrQHJGU/edit?tab=t.0)
+    
+    - [Fragment and Forge](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:dhFuZR0502QC) - [notatka](https://docs.google.com/document/d/1MF_7N2eQLGSk97Id3Wvsa0lMu2DVwOMDaKxAkW8jJ98/edit?usp=sharing)
+    
     - Martin Pracka 1
 
 
@@ -38,7 +40,6 @@
 
 - **Jak na tym tle lokuje się moja praca?**
   -  Eskperymentalna analiza grup podatności z użyciem powszechnego sprzętu WiFi (zarówno APs jak i urządzenia klienckie), badania charakterystyki podtaności na tle prakycznym a nie tylko czysto naukowym, 
-  -  Testujemy gotowe rozwiązania przetestowane przy pomocy symulacji na fizycznym sprzęcie
   -  Ocena trudności wykonania i złożoności testowanych scenariuszy
   -  Nasza ocena wpływu podatności na realne środowiska bezprzewodowe (Gdzie podatności mają prawo namieszać)
   -  Porównanie wpływu software'u oraz standardu na podatność na urządzenia
