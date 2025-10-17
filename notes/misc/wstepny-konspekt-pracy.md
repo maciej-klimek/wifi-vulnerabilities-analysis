@@ -28,7 +28,7 @@
 3. **State of the art tematu pracy:**
 
    <!-- 1. obecne informacje o standardzie i omawianych podatnościach, kluczowe aspekty potrzebne do zobrazowania intencji pracy   -->
-   1. powołanie się na podobne eksperymenty - nasza motywacja i inspiracja [odwołania do prac M. VanHoef]  
+   1. powołanie się na podobne eksperymenty - nasza motywacja i inspiracja [odwołania do prac M. VanHoef oraz Inne]  
    2. obecne działania vendorów mające na celu zapobieganie omawianym zagrożeniom
 
 4. **Podszywanie się pod punkty dostępowe Wi-Fi - SSID Integrity Vulnerabilities**  
@@ -93,8 +93,3 @@
 
 
 
----
-ToDo do dodania/zmiany:
- - [X] 3 stage badania SSID: Zrytek, Nasz conf Hostapd, Boss
- - [ ] Mniej więcej to samo dla Transmit Queqe Context Flaw (framing):
-   - [ ] Mniej wiecej wybrac ktore dokladnie podatnosci testujemy - do lekkich zmian w zaleznosci od tego z czego nam wyjda bardziej rzeczowe wyniki/obserwacje

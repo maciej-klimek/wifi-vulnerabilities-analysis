@@ -7,7 +7,7 @@
 
 ---
 ### 2. Zaprezentowanie dokładnego planu pracy i przewidywanego spisu jej treści:
-[Konspekt Pracy ☝️](<../Konspekt Pracy ☝️.md>)
+[Wstepny-konspekt-pracy](../wstepny-konspekt-pracy.md)
 
 ---
 ### 3. Przedstawienie zebranej literatury, min. 4 pozycje, wyjaśnienie::
@@ -29,8 +29,7 @@
     
     - [Fragment and Forge](https://scholar.google.pl/citations?view_op=view_citation&hl=en&user=02_-sZ0AAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=02_-sZ0AAAAJ:dhFuZR0502QC) - [notatka](https://docs.google.com/document/d/1MF_7N2eQLGSk97Id3Wvsa0lMu2DVwOMDaKxAkW8jJ98/edit?usp=sharing)
     
-    - Martin Pracka 1
-
+    - [WPA3-dragonfly](../WPA3-dragonfly-analysis.md)
 
 ---
 ### 4. Przedstawienie krótkiego *State-of-Art* dot. zagadnień badanych w pracy/projekcie:
