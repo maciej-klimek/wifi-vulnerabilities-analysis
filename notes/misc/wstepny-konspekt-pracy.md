@@ -23,7 +23,7 @@
    5. Opis układu treści prezentowanych w pracy (struktura pracy):  
       1. *Zabawa na sam koniec :)*
 
-2. **Wifi security - omówienie aktualnych teorii i standardów**      
+2. **Wifi security - omówienie aktualnej teorii i standardów**      
 
 3. **State of the art tematu pracy:**
 
