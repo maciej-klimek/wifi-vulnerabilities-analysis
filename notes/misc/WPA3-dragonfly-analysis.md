@@ -53,7 +53,6 @@ W **EAP-pwd** do inputu hasha dodaje się też **random token** od serwera.
 ---
 
 ### Timing leaks i mitigacje
-
 Autorzy zwracają uwagę, że:
 
 * WPA3-SAE robi pętlę **k razy** niezależnie, kiedy znajdzie P, żeby uniknąć **timing leaks** (typowo k=40).
@@ -140,7 +139,7 @@ Jeśli coś się nie zgadza → **abort handshake**.
 * `s_i` → suma losowych skalarów, używana w późniejszej części do obliczeń secret point
 * `r_i` i `m_i` → tajne losowe skalary, nie ujawniane
 * `P` → punkt zależny od hasła, wspólny „podstawowy sekret”
-
+qq
 **Dlaczego forward secrecy działa:**
 
 * Nawet jeśli ktoś podsłucha `E_i` i `s_i`, nie da się odtworzyć `m_i` ani `r_i` → nie da się wyliczyć K bez znajomości losowych skalarów.
