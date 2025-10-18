@@ -1,5 +1,6 @@
-### Ogolne:
-- [ ] dodac moduly i pliki ktorych uzywamy przy testach (ssid repo, wifi framework/framing)
+### OGÓLNE:
+- [X] dodac moduly i pliki ktorych uzywamy przy testach (ssid repo, wifi framework/framing)
+  - [ ] dodac "dobre mc-mitm do ssid
 - [ ] opisac i zrobic wlasne instrukcje do funkcjonalnosci ktore uzywamy
 - [ ] Spróbować postawić sieć FreeBSD przy pomocy hostapd
 
@@ -12,25 +13,54 @@
 - [X] test end-end dostepu
 - [ ] ssid test
   - [ ] warto sprobowac zrobic modyfikacje do samego kodu ataku i pyknac jeszcze raz
+  - [ ] ztestowac z "dobrym" mc-mitm
 
-### SSID:
+### SIV:
 - [X] zrobic python enva pod atak
-- [ ] przegladnac helpery czy instaluja wszystko fakycznie (opcja na wylaczenie apt-update)
+- [X] przegladnac helpery czy instaluja wszystko fakycznie (opcja na wylaczenie apt-update)
 - [ ] Poprawić skrypt sprawdzający czy dane urządzenie jest podatne na atak
+
+### QSC:
+- [ ] Test case 4wh przerobić i opisać własnymi słowami
 
 ### OVERLEAF
 - [ ] Przepisać wstępny koncpekt i spis treści do overleava
-- [ ] Ogarnac czy jest jakis version control - idea pisania pracy troche jak sie robi pull requesty
+- [ ] Ogarnac czy jest jakis version control - idea pisania pracy troche jak sie robi pull requesty -> Jest:
+  - [ ] Przetestowac to rozwiązanie
+
+## POTRZEBNE DO PRACY:
+### SIV:
+- **TP-LINK:**
+  - [ ] logi/screeny - mc-mitm, router, client
+  - [ ] frame capture: mc-mitm rouge ap: probe req/res, 4whs...
+  - [ ] schemat/frame flow
+- **HOSTAPD:**
+  - [ ] logi - AP, WPASuplicant (deamon, ping -> AP), mc-mitm,
+  - [ ] frame capture: mc-mitm rouge ap: probe req/res, 4whs...
+  - [ ] schemat/frame flow
+- **ASUS:**
+  - [ ] logi/screeny - mc-mitm, router, client
+  - [ ] frame capture: mc-mitm rouge ap: probe req/res, 4whs...
+  - [ ] schemat/frame flow
+
+### QSC:
+- **SA QUERY:**
+  - [ ] logi/screeny - AP, Client
+  - [ ] frame capture: Ramka z sleep bitem, SA Query
+  - [ ] schemat/frame flow
+- **4 WAY HANDSHAKE:**
+  - [ ] TBD
 
 
+---
+---
+---
 ### PLANY NA PIĄTEK 17.10.2025r:
-- [ ] Prep:
-  - [ ] HDMI NA PIĄTEK DO LABA !!!!!!!!!!!!!!
-  - [ ] Przeczytać dokładnie SA query i 4way handshake query w Framing Frames
-- [ ] Przerobić jeszcze raz scenaiursz SQ query 
-  - [ ] zrobić w miare dokładne notatki przebiegu eksperymentu
-- [ ] Porozmawiać z Profesorem Szottem o tym co zrobiliśmy do teraz, zapytać o wkład własny
-  - [ ] Zaproponować napisanie samemu ataku Queueing of 4-Way Handshake Messages
+- [X] Prep:
+  - [X] HDMI NA PIĄTEK DO LABA !!!!!!!!!!!!!!
+  - [X] Przeczytać dokładnie SA query i 4way handshake query w Framing Frames
+- [X] Przerobić jeszcze raz scenaiursz SQ query 
+  - [X] zrobić w miare dokładne notatki przebiegu eksperymentu
+- [X] Porozmawiać z Profesorem Szottem o tym co zrobiliśmy do teraz, zapytać o wkład własny
+  - [X] Zaproponować napisanie samemu ataku Queueing of 4-Way Handshake Messages
  
-
-# HDMI NA PIĄTEK DO LABA !!!!!!!!!!!!!!
