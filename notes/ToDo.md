@@ -3,6 +3,7 @@
   - [ ] dodac "dobre mc-mitm do ssid
 - [ ] opisac i zrobic wlasne instrukcje do funkcjonalnosci ktore uzywamy
 - [ ] Spróbować postawić sieć FreeBSD przy pomocy hostapd
+- [ ] Rename i lepsza struktura plikow
 
 
 ### HOSTAPD:
