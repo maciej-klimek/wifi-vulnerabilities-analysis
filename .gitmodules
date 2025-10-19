@@ -1,0 +1,3 @@
+[submodule "queue-security-context/wifi-framework/dependencies/libwifi"]
+	path = queue-security-context/wifi-framework/dependencies/libwifi
+	url = https://github.com/vanhoefm/libwifi.git
