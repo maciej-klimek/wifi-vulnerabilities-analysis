@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 import argparse
 import atexit
+import glob
+import importlib
+import pathlib
 
 # Import dependencies and libraries.
 from dependencies.libwifi.wifi import *
@@ -17,20 +20,20 @@ VERSION = "1.0"
 
 # ----------------------------------- Helper Functions --------------------------------
 
+
 def dynamically_load_test(name):
-	"""Avoids us from editing this file when writing new tests."""
-	# Search each file matching our test-template.
-	for test in glob("test-*.py"):
-		module = __import__(test[:-3])
-		# Load all our test classes.
-		for attribute_name in dir(module):
-			attribute = getattr(module, attribute_name)
-			# Check for classes with a name attribute.
-			if isinstance(attribute, type) and hasattr(attribute,"name"):
-				if attribute.name == name:
-					return attribute
-	# Requested test could not be found.
-	return None
+    for test_path in pathlib.Path("../testcases").glob("test-*.py"):
+        spec = importlib.util.spec_from_file_location(
+            test_path.stem, test_path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        for attribute_name in dir(module):
+            attribute = getattr(module, attribute_name)
+            if isinstance(attribute, type) and hasattr(attribute, "name"):
+                if attribute.name == name:
+                    return attribute
+    return None
 	
 def cleanup():
 	station.stop()
