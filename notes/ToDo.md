@@ -19,7 +19,8 @@
 ### SIV:
 - [X] zrobic python enva pod atak
 - [X] przegladnac helpery czy instaluja wszystko fakycznie (opcja na wylaczenie apt-update)
-- [ ] Poprawić skrypt sprawdzający czy dane urządzenie jest podatne na atak
+- [ ]X Poprawić skrypt sprawdzający czy dane urządzenie jest podatne na atak
+- [ ]* Test wirtualnych interfacow ale na dwoch kompach (PC1 = S + MITM  |   PC2 = AP)
 
 ### QSC:
 - [ ] Test case 4wh przerobić i opisać własnymi słowami
@@ -64,4 +65,14 @@
   - [X] zrobić w miare dokładne notatki przebiegu eksperymentu
 - [X] Porozmawiać z Profesorem Szottem o tym co zrobiliśmy do teraz, zapytać o wkład własny
   - [X] Zaproponować napisanie samemu ataku Queueing of 4-Way Handshake Messages
+
+### PLANY NA PIĄTEK 24.10.2025r:
+- [ ] SIV ze zrytkiem:
+  - [ ]* jak cos nie bedzie stykac - potestowac drugie mc-mitm
+  - [ ]* Client: Telefon(Android/IoS) ALBO* wpa_suplicant
+  - [ ] Wszystkie logi (zrytek, mc-mitm)
+  - [ ] Filmik z perpektywy mc-mitm
+  - [ ] Caly przeplyw ramek (filtr z ostatnieg commita)
+  - [ ] Spisac dokladna konfiguracje zryta (moze byc ss)
+  - [ ] HDMI ! ! !
  
