@@ -15,7 +15,7 @@
 
    1. [Motywacja] Charakterystyka obszaru tematycznego: *standard IEEE 802.11, 802.11i -  WPA(WPA3)*   
       Cel Pracy: Experimental Analysis of Modern Attacks Against IEEE 802.11 Networks   
-   2. Cel pracy / pytania badawcze (np. czy łatwo wykonać atak? czy urządzenia są podatne?)  
+   2. Cel pracy / pytania badawcze (np. czy łatwo wykonać atak? czy urządzenia są podatne? Jakie są sktuki podatności)  
    3. Metodologia - czyli jak odpowiemy na te pytania - na drodze eksperymentalnej  
    4. Indywidualny wkład “dyplomanta” (intencje i oczekiwania):   
       1. Weryfikacja wpływu podatności na realne środowiska i urządzenia komercyjne - ewaluacja implementacji softwaru urządzeń (COTS) zarówno po stronie access pointów jak i urządzeń klienckich  
@@ -91,5 +91,20 @@
 
 
 
-
-
+SIV - jak to widze (martin):
+1. Teoria
+   1. Threat model - schemat dla ogolnego przypadku (ten jakby flow ramek schemat)
+   2. Testowanie poszczegolnych urzadzen klienckich - Modified hostapd z repo (do rozwiazania problem RSN handshaka [open siec czy nie?])
+      1. Kilka przypadkow i opis ich zachowan, windows, linuxy, android, iphone, wpasupplicant
+   3. Nasz testbed - schemat sieci Real AP <-> RogueAP/MITM <-> Client:
+      1. Scenariusz na wirtualnych interfacach:
+         1. Architektura sieci + flow ramek
+         2. configi - hostapd, wpa_suplicant, wersje Hostapd
+         3. Opis wytlumaczenie i fragmenty uzywanego kodu
+         4. Przebieg ataku - logi + ramki, - zestawienie jak to sie ma do teorii
+         5. Podsumowanie - rozne zachowania w zaleznosci do werscji hostapd i srodowiska
+      2. Scenariusz z cheap COTS AP (TPlink):
+         1. Dokladna architektura sieci + flow ramek (podobne jak wyzej, z zaznaczeniem realnych kanalow transmisyjnych)
+         2. Config Routera, wspomnienie ze ten sam kod mc-mitm (jaka roznica w dzialaniu w stosunu do hostpad sim)
+         3. Opis wynikow kilku eksperymentow - brak konsekwencji, niedeterministycznosc zachowania sie skryptu, kanal i warunki ekstremalnie wplywa na powodzenie (logi i ramki jakie mamy - powolac sie na nie)
+      3. Test high tier AP - TBC

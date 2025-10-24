@@ -4,6 +4,7 @@
 - [ ] opisac i zrobic wlasne instrukcje do funkcjonalnosci ktore uzywamy
 - [ ] Spróbować postawić sieć FreeBSD przy pomocy hostapd
 - [ ] Rename i lepsza struktura plikow
+- [ ] Przerzucic logi i frame cap z dysku (2025-10-24)
 
 
 ### HOSTAPD:
