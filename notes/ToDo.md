@@ -13,18 +13,32 @@
 - [X] walidacji czy ma prawo dzialac na lab kompie - MA PRAWO !! (inny conf i problem z apd-update)
   - (opcja na wylaczenie apt-update)
 - [X] test end-end dostepu
-- [ ] ssid test
-  - [ ] warto sprobowac zrobic modyfikacje do samego kodu ataku i pyknac jeszcze raz
-  - [ ] ztestowac z "dobrym" mc-mitm
+- [X] ssid test
+  - [X] warto sprobowac zrobic modyfikacje do samego kodu ataku i pyknac jeszcze raz
+  - [X] ztestowac z "dobrym" mc-mitm
 
 ### SIV:
 - [X] zrobic python enva pod atak
 - [X] przegladnac helpery czy instaluja wszystko fakycznie (opcja na wylaczenie apt-update)
 - [ ]X Poprawić skrypt sprawdzający czy dane urządzenie jest podatne na atak
 - [ ]* Test wirtualnych interfacow ale na dwoch kompach (PC1 = S + MITM  |   PC2 = AP)
+- [ ] TESTY PODATNOSCI CLIENTOW (base readme skrypty)
+  - [ ] Windows
+  - [ ] Linuxy
+  - [ ] ios - dhcp needed (internet access?)
+  - [ ] samsung - dhcp needed (internet access?)
 
 ### QSC:
+- [ ] saquery testy na roznych apekach -> logi, capture, ssy:
+  - [ ] hostpad
+  - [ ] samsung hotspot
+  - [ ] ios hotspos
+  - [ ] wpa2 cheap ap
+  - [ ] wpa3 highend ap
+  - [ ] im wiecej tym lepiej
+  - [ ] !!! jednoczesnie mozna porobic ssid vulnerabilty na clientach - look SIV
 - [ ] Test case 4wh przerobić i opisać własnymi słowami
+  - [ ] pskcache problem?
 
 ### OVERLEAF
 - [ ] Przepisać wstępny koncpekt i spis treści do overleava
