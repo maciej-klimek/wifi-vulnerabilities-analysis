@@ -103,9 +103,21 @@ SIV - jak to widze (martin):
          3. Opis wytlumaczenie i fragmenty uzywanego kodu
          4. Przebieg ataku - logi + ramki, - zestawienie jak to sie ma do teorii
          5. Podsumowanie - rozne zachowania w zaleznosci do werscji hostapd i srodowiska
-            1. Kernel?Os? cos wplywa, u Adiego smiga na 
+            1. Kernel?Os? cos wplywa, u Adiego smiga u mnie nie
       2. Scenariusz z cheap COTS AP (TPlink):
          1. Dokladna architektura sieci + flow ramek (podobne jak wyzej, z zaznaczeniem realnych kanalow transmisyjnych)
          2. Config Routera, wspomnienie ze ten sam kod mc-mitm (jaka roznica w dzialaniu w stosunu do hostpad sim)
          3. Opis wynikow kilku eksperymentow - brak konsekwencji, niedeterministycznosc zachowania sie skryptu, kanal i warunki ekstremalnie wplywa na powodzenie (logi i ramki jakie mamy - powolac sie na nie)
       3. Test high tier AP - TBC
+
+
+QSC - wstepne plany (do rozwazenia zmiana nazwy dzialu, albo dodanie kolejnego - mac spoofing):
+1. Teoria - co definiujemy jako queqe security context, dlaczego go potrzebujemy
+2. SA Query threat model:
+   1. Schemat akatu, flow
+   2. Logi, ramki, po kolei co sie dzieje
+   3. Wytlumaczenie
+3. 4wh threat model
+
+
+!Mac spoofing - breaking client isolation in the simplest way
