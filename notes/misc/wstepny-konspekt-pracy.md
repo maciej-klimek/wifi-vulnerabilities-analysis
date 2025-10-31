@@ -103,6 +103,7 @@ SIV - jak to widze (martin):
          3. Opis wytlumaczenie i fragmenty uzywanego kodu
          4. Przebieg ataku - logi + ramki, - zestawienie jak to sie ma do teorii
          5. Podsumowanie - rozne zachowania w zaleznosci do werscji hostapd i srodowiska
+            1. Kernel?Os? cos wplywa, u Adiego smiga na 
       2. Scenariusz z cheap COTS AP (TPlink):
          1. Dokladna architektura sieci + flow ramek (podobne jak wyzej, z zaznaczeniem realnych kanalow transmisyjnych)
          2. Config Routera, wspomnienie ze ten sam kod mc-mitm (jaka roznica w dzialaniu w stosunu do hostpad sim)
