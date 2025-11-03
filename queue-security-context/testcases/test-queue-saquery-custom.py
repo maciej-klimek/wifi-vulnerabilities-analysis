@@ -38,7 +38,7 @@ class QueueSAQuery(Test):
 		
 		# Construct payload for the Association-request.
 		payload = Dot11AssoReq()
-		payload /= Dot11Elt( ID='SSID', info='testnetwork' )
+		payload /= Dot11Elt(ID='SSID', info='PowinnoSmigac')
 		payload /= Dot11Elt( ID='Rates', info='\x02\x04\x0b\x16\x0c\x12\x18\x24' )
 		payload /= Dot11Elt( ID='ESRates', info='\x30\x48\x60\x6c' )
 		payload /= Raw(bytes.fromhex("301a0100000fac040100000fac040100000fac08c0000000000fac06")) # RSN.
