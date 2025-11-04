@@ -31,10 +31,12 @@
 ### QSC:
 - [ ] saquery testy na roznych apekach -> logi, capture, ssy:
   - [ ] hostpad
-  - [ ] samsung hotspot
-  - [ ] ios hotspos
+  - [X] samsung hotspot
+    - dorobic: wpa3 no pmf, wpa2, dodac ssy z telefonu
+  - [ ] ios hotspot - wpa2/3 no pmf
   - [ ] wpa2 cheap ap
-  - [ ] wpa3 highend ap
+  - [X] wpa3 highend ap
+    - Wstepne testy na orange home M - dodac ss z konsoli AP (jakie settingi testowane) ?pmf?
   - [ ] im wiecej tym lepiej
   - [ ] !!! jednoczesnie mozna porobic ssid vulnerabilty na clientach - look SIV
 - [ ] Test case 4wh przerobić i opisać własnymi słowami
