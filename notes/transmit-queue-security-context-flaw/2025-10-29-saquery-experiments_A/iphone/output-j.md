@@ -34,4 +34,4 @@ wlo1: CTRL-EVENT-DSCP-POLICY clear_all
 nl80211: deinit ifname=wlo1 disabled_11b_rates=0
 wlo1: CTRL-EVENT-TERMINATING 
 
-udalo sie odpalic wpa3 - niepodatny
+udalo sie odpalic wpa3 - niepodatny 
