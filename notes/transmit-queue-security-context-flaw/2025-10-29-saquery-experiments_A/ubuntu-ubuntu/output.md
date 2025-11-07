@@ -70,3 +70,19 @@ wlp0s20f3: CTRL-EVENT-CONNECTED - Connection to a0:51:0b:65:8e:70 completed [id=
 [18:29:56] Generating queue-saquery-ubuntu test case.
 [18:29:57] Injected <Dot11  subtype=Association Request type=Management FCfield=pw-mgt addr1=a0:51:0b:65:8e:70 (RA=DA) addr2=ec:63:d7:89:d5:5a (TA=SA) addr3=a0:51:0b:65:8e:70 (BSSID/STA) |<Dot11AssoReq  |<Dot11Elt  ID=SSID info=b'testnetwork-ubuntu' |<Dot11Elt  ID=Supported Rates info=b'\x02\x04\x0b\x16\x0c\x12\x18$' |<Dot11Elt  ID=Extended Supported Rates info=b'0H`l' |<Raw  load=b'0\x1a\x01\x00\x00\x0f\xac\x04\x01\x00\x00\x0f\xac\x04\x01\x00\x00\x0f\xac\x08\xc0\x00\x00\x00\x00\x0f\xac\x06' |>>>>>>
 [18:29:59] Injected <Dot11  subtype=Association Request type=Management addr1=a0:51:0b:65:8e:70 (RA=DA) addr2=ec:63:d7:89:d5:5a (TA=SA) addr3=a0:51:0b:65:8e:70 (BSSID/STA) |<Dot11AssoReq  |<Dot11Elt  ID=SSID info=b'testnetwork-ubuntu' |<Dot11Elt  ID=Supported Rates info=b'\x02\x04\x0b\x16\x0c\x12\x18$' |<Dot11Elt  ID=Extended Supported Rates info=b'0H`l' |<Raw  load=b'0\x1a\x01\x00\x00\x0f\xac\x04\x01\x00\x00\x0f\xac\x04\x01\x00\x00\x0f\xac\x08\xc0\x00\x00\x00\x00\x0f\xac\x06' |>>>>>>
+
+
+AP - Martin:
+(venv) root@dell:/home/martin/Repos/wifi-vulnerabilities-analysis/queue-security-context/wifi-framework# ./hostap.py wlo1 --ap
+[18:26:27] Using interface monwlo1 (iwlwifi) to inject frames.
+[18:26:27] Starting daemon using: ./dependencies/hostap_2_10/hostapd/hostapd -i wlo1 ./setup/hostapd.conf -K
+wlo1: interface state UNINITIALIZED->ENABLED
+wlo1: AP-ENABLED 
+wlo1: AP-STA-ASSOCIATING ec:63:d7:89:d5:5a
+wlo1: STA ec:63:d7:89:d5:5a IEEE 802.11: associated (aid 1)
+wlo1: AP-STA-CONNECTED ec:63:d7:89:d5:5a
+wlo1: STA ec:63:d7:89:d5:5a RADIUS: starting accounting session 67843A71F93C92D0
+wlo1: STA ec:63:d7:89:d5:5a WPA: pairwise key handshake completed (RSN)
+wlo1: EAPOL-4WAY-HS-COMPLETED ec:63:d7:89:d5:5a
+wlo1: AP-STA-DISCONNECTED ec:63:d7:89:d5:5a
+^Cwlo1: interface state ENABLED->DISABLED
