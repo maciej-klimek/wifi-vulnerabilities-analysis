@@ -22,18 +22,20 @@
 - [X] Poprawić skrypt sprawdzający czy dane urządzenie jest podatne na atak
 - [ ]* Test wirtualnych interfacow ale na dwoch kompach (PC1 = S + MITM  |   PC2 = AP)
 - [ ] TESTY PODATNOSCI CLIENTOW
+  - [ ] REFACTOR OUTPUT FILES + SAVE USEFUL FILTERS !!!! 
   - [ ] Samsung - base case:
     - [X] dhcp needed - yes, (internet access? - no)
     - [X] custom scripts for testbed (wifi setup, dhcp...)
     - [X] Virtual interface for capture setup + steps (steps.md)
-    - [ ] Outputs(done) + frames(not done - VIF):
-      - [ ] open network
-      - [ ] wpa2
-      - [ ] wpa3 personal
+    - [X] Outputs(done) + frames(not done - VIF):
+      - [X] open network
+      - [X] wpa2
+      - [X] wpa3 personal
       - [ ] wpa3 enterprise*
-    - Comparasion - Android Motorolla phone
-  - [ ] Windows
-  - [ ] Linuxy
+    - Comparasion - Android Motorola phone
+  - [X] Windows
+  - [X] Motorola
+  - [ ] Linux
   - [ ] IOS - should be similar case to samsung
 
 ### QSC:
@@ -42,11 +44,11 @@
   - [X] samsung hotspot
     - dorobic: wpa3 no pmf, wpa2, dodac ssy z telefonu
   - [X] ios hotspot - wpa2/3 no pmf
-  - [ ] wpa2 cheap ap
+  - [X] wpa2 cheap ap
   - [X] wpa3 highend ap
     - Wstepne testy na orange home M - dodac ss z konsoli AP (jakie settingi testowane) ?pmf?
-  - [ ] im wiecej tym lepiej
-  - [ ] !!! jednoczesnie mozna porobic ssid vulnerabilty na clientach - look SIV
+  - [X] im wiecej tym lepiej
+  - [X] !!! jednoczesnie mozna porobic ssid vulnerabilty na clientach - look SIV
 
 - [ ] Test case 4wh przerobić i opisać własnymi słowami
   - [ ] pskcache problem?
@@ -71,14 +73,6 @@
   - frame capture: mc-mitm rouge ap: probe req/res, 4whs...
   - schemat/frame flow
 - **Cliend vuln testing** - all testcases -> outputs and capture for some
-
-### QSC:
-- **SA QUERY:**
-  - [ ] logi/screeny - AP, Client
-  - [ ] frame capture: Ramka z sleep bitem, SA Query
-  - [ ] schemat/frame flow
-- **4 WAY HANDSHAKE:**
-  - [ ] TBD
 
 
 ---
