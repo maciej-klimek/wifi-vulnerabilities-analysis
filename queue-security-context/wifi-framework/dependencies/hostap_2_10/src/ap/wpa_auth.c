@@ -1727,6 +1727,9 @@ static void wpa_send_eapol(struct wpa_authenticator *wpa_auth,
 	if (!sm)
 		return;
 
+	// if (pairwise) {
+    //     usleep(2000000);  // 2 sekundy
+    // }
 	__wpa_send_eapol(wpa_auth, sm, key_info, key_rsc, nonce, kde, kde_len,
 			 keyidx, encr, 0);
 
