@@ -37,6 +37,7 @@
   - [X] Motorola
   - [ ] Linux
   - [ ] IOS - should be similar case to samsung
+  - [ ] CLient vulnerabilty łapanie beaconow
 
 ### QSC:
 - [X] saquery testy na roznych apekach -> logi, capture, ssy:
