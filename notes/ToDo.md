@@ -92,4 +92,14 @@
   - [ ] Caly przeplyw ramek (filtr z ostatnieg commita)
   - [ ] Spisac dokladna konfiguracje zryta (moze byc ss)
   - [ ] HDMI ! ! !
+
+### NA PIĄTEK 21.11.2025r:
+- [ ] Pytanie o to jak robic wykresy i grafiki do pracy:
+  - [ ] czy grafiki musza byc svg, czy wyskiej jakosci stratne git
+  - [ ] wykresy - jakis tool fajny
+- [ ] czy robimy przypisy/bibliografie w dobry sposob
+- [ ] czy mozemy korzystac z materialow z zajec (Dr. Natkaniec slajdy)
+  - [ ] jak robic do tego przypisy?
+- [ ] Pogadac o Githubie
+- [ ] Jak ma sie rozkladac praca - ile stron mniej wiecej (jaki procent) gdzie powinno byc
  

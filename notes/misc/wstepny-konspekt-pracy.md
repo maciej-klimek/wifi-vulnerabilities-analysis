@@ -121,3 +121,7 @@ QSC - wstepne plany (do rozwazenia zmiana nazwy dzialu, albo dodanie kolejnego -
 
 
 !Mac spoofing - breaking client isolation in the simplest way
+
+
+---
+
