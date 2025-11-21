@@ -1,6 +1,6 @@
 ### OGÓLNE:
 - [X] dodac moduly i pliki ktorych uzywamy przy testach (ssid repo, wifi framework/framing)
-  - [ ] dodac "dobre mc-mitm do ssid
+  - [X] dodac dobre mc-mitm do ssid
 - [X] opisac i zrobic wlasne instrukcje do funkcjonalnosci ktore uzywamy
 - [X] Rename i lepsza struktura plikow
 - [ ] Przerzucic logi i frame cap z dysku (2025-10-24)
@@ -23,7 +23,7 @@
 - [ ]* Test wirtualnych interfacow ale na dwoch kompach (PC1 = S + MITM  |   PC2 = AP)
 - [ ] TESTY PODATNOSCI CLIENTOW
   - [ ] REFACTOR OUTPUT FILES + SAVE USEFUL FILTERS !!!! 
-  - [ ] Samsung - base case:
+  - [X] Samsung - base case:
     - [X] dhcp needed - yes, (internet access? - no)
     - [X] custom scripts for testbed (wifi setup, dhcp...)
     - [X] Virtual interface for capture setup + steps (steps.md)
@@ -39,7 +39,7 @@
   - [ ] IOS - should be similar case to samsung
 
 ### QSC:
-- [ ] saquery testy na roznych apekach -> logi, capture, ssy:
+- [X] saquery testy na roznych apekach -> logi, capture, ssy:
   - [X] hostpad
   - [X] samsung hotspot
     - dorobic: wpa3 no pmf, wpa2, dodac ssy z telefonu
@@ -50,9 +50,14 @@
   - [X] im wiecej tym lepiej
   - [X] !!! jednoczesnie mozna porobic ssid vulnerabilty na clientach - look SIV
 
-- [ ] Test case 4wh przerobić i opisać własnymi słowami
-  - [ ] pskcache problem?
-
+- [X] Test case 4wh przerobić i opisać własnymi słowami
+  - [X] pskcache problem?
+  - [ ] Wlasna implementacja injection w scapy
+    - [X] full flow - nie da sie zrobic bez pelnego crypto
+    - [X] just injection - timing issue - AP ignoruje null framesy jak juz zacznie procedure z realnym klientem   
+      - [ ] Zcapturowac ramki jak to wyglada (ss w dirze jest)
+    - [ ] Udokumentoac czemu frameworkiem sie tego nie da zrobic (inna warstwa)
+    
 ### OVERLEAF
 - [ ] Przepisać wstępny koncpekt i spis treści do overleava
 - [X] Ogarnac czy jest jakis version control - idea pisania pracy troche jak sie robi pull requesty -> Jest:
@@ -95,5 +100,16 @@
   - [ ] Filmik z perpektywy mc-mitm
   - [X] Caly przeplyw ramek (filtr z ostatnieg commita)
   - [ ] Spisac dokladna konfiguracje zryta (moze byc ss)
-  - [X] HDMI ! ! !
+  - [ ] HDMI ! ! !
+
+### NA PIĄTEK 21.11.2025r:
+- [x] Pytanie o to jak robic wykresy i grafiki do pracy:
+  - [x] czy grafiki musza byc svg, czy wyskiej jakosci stratne git
+  - [x] wykresy - jakis tool fajny
+- [ ] czy robimy przypisy/bibliografie w dobry sposob
+- [x] czy mozemy korzystac z materialow z zajec (Dr. Natkaniec slajdy)
+  - [ ] jak robic do tego przypisy? tytuł, data, kiedy access, można brać ze google scholara 
+- [ ] Pogadac o Githubie
+- [x] Jak ma sie rozkladac praca - ile stron mniej wiecej (jaki procent) gdzie powinno byc
+ 
  
