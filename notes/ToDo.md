@@ -112,5 +112,4 @@
 - [ ] Pogadac o Githubie
 - [x] Jak ma sie rozkladac praca - ile stron mniej wiecej (jaki procent) gdzie powinno byc
  
-  - [X] HDMI ! ! !
  
