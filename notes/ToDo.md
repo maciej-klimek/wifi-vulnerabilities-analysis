@@ -4,6 +4,7 @@
 - [X] opisac i zrobic wlasne instrukcje do funkcjonalnosci ktore uzywamy
 - [X] Rename i lepsza struktura plikow
 - [ ] Przerzucic logi i frame cap z dysku (2025-10-24)
+- [ ] System kali
 
 
 ### HOSTAPD:
@@ -58,7 +59,8 @@
     - [X] just injection - timing issue - AP ignoruje null framesy jak juz zacznie procedure z realnym klientem   
       - [ ] Zcapturowac ramki jak to wyglada (ss w dirze jest)
     - [ ] Udokumentoac czemu frameworkiem sie tego nie da zrobic (inna warstwa)
-    
+- [ ] Test case jeden od Maćka
+- [ ] Test case Iphone 15 Adrian  
 ### OVERLEAF
 - [ ] Przepisać wstępny koncpekt i spis treści do overleava
 - [X] Ogarnac czy jest jakis version control - idea pisania pracy troche jak sie robi pull requesty -> Jest:
