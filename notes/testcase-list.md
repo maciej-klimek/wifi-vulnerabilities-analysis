@@ -1,17 +1,17 @@
 # SA-Query:
-1. Virtual
-2. Android (Hotspot):
+0. Virtual
+1. Android (Hotspot):
 - Samsung Phone
 - Motorola Phone
 - Lenovo Tablet*
-3. IOS (Hotspot):
+2. IOS (Hotspot):
 - Jan
 - Laura*
 - Adrian
-4. AP:
+3. AP:
 - Tplink
 - HomeRouter
-- Boss*
+- Boss
 
 # Siv
 ## Client-testing:
@@ -31,5 +31,5 @@
 
 ## mc-mitm:
 0. Virtual (2025-10-31_mc_mitm_virtual)
-1. Tplink <-> Adi Dell + samsung android + iphone ios (2025-11-28-testlab (+drive))*
-2. Boss <-> Adi Dell + samsung android + iphone ios (2025-03-24-screeny + 2025-11-28-testlab)*
+1. Tplink <-> Adi Dell + samsung android + iphone ios (2025-11-28-testlab (+drive)) -> XDDD
+2. Boss <-> Adi Dell + samsung android + iphone ios (2025-03-24-screeny + 2025-11-28-testlab) -> xDDDD
