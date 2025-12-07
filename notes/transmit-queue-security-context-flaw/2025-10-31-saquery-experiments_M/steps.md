@@ -12,7 +12,7 @@ apt-get install libdbus-1-dev libnl-3-dev libnl-genl-3-dev libnl-route-3-dev lib
 ### framework:
 
 ```
-cd ../dependencies
+cd ../dependenciesdependencies
 ./build.sh
 cd ../setup
 ./pysetup.sh
