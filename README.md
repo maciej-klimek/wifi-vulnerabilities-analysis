@@ -2,7 +2,7 @@
 
 > NOTE: This is a working repository for an engineering thesis. It was used to organize, set up, and document experiments. Consequently, the code and structure are functional for the research but may not be well-organized and fully complete.
 
-This repository contains code, scripts, research results, and notes related to the engineering thesis titled *"Experimental Analysis of Modern Attacks Against IEEE 802.11 Networks"*. The thesis itself, available as `thesis.pdf`, offers a comprehensive report on this research, presenting a detailed analysis of the experiments, the results obtained, and the conclusions drawn from the study.
+This repository contains code, scripts, research results, and notes related to the engineering thesis titled *"Experimental Analysis of Modern Attacks Against IEEE 802.11 Networks"*. The thesis itself, offers a comprehensive report on this research, presenting a detailed analysis of the experiments, the results obtained, and the conclusions drawn from the study.
 
 ## Repository Structure
 
@@ -21,11 +21,6 @@ Main directories of this repository:
     *   [`wifi-framework`](https://github.com/domienschepers/wifi-framework): Framework for orchestrating and automating Wi-Fi experiments.
 *   `notes-captures-results`: A working folder containing notes, network traffic captures, test results, and other supporting materials used while writing the thesis.
 
-
-
-## Engineering Thesis
-
-The [thesis.pdf](thesis.pdf) file is the engineering thesis that serves as the main report and documentation of the conducted research. It describes the theoretical foundations of Wi-Fi networks, the analysis of the studied vulnerabilities, the course of the experiments, and the conclusions.
 
 ## Base Structure
 
